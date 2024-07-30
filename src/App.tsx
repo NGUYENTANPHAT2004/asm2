@@ -26,7 +26,7 @@ const AppRoutes = () => {
             children: [
                 { path: "categories", element: <CategoryList /> },
                 { path: "products", element: <Orders /> },
-                // Thêm các tuyến đường khác của dashboard ở đây nếu cần
+                // Thêm các tuyến đường khác của dashboard ở đây nếu cần thiet
             ],
         },
     ]);
