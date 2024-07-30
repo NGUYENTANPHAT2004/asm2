@@ -1,0 +1,21 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "bóng đá23323",
+      "price": "2000",
+      "image": "https://khoinguonsangtao.vn/wp-content/uploads/2022/10/hinh-anh-bong-da.jpg",
+      "category": 1
+    }
+  ],
+  "categories": [
+    {
+      "name": "bóng đá",
+      "id": 1
+    },
+    {
+      "name": "bóng rổ",
+      "id": 2
+    }
+  ]
+}
