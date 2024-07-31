@@ -4,7 +4,6 @@
       "id": 1,
       "name": "bóng đá23323",
       "price": "2000",
-<<<<<<< HEAD
       "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722392570/mpkcwm7wfxx1f9hnnnep.jpg",
       "category": 1
     },
@@ -17,33 +16,26 @@
     },
     {
       "id": 3,
-      "name": "phat",
-      "price": "3323",
-      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722392796/kjwiddb2kjk2ppuvyrl7.jpg",
-      "category": 2
-=======
-      "image": "https://khoinguonsangtao.vn/wp-content/uploads/2022/10/hinh-anh-bong-da.jpg",
+      "name": "QMANHq12323232",
+      "price": "332323",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722394540/ilvllsxbz38m7rhdoaeq.jpg",
       "category": 1
->>>>>>> 5e83919d179848a9be71bbe36004135dc63b5d8c
     }
   ],
   "categories": [
     {
-<<<<<<< HEAD
       "name": "dsdsd",
       "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722392748/sef8sk83litlydotoyqy.jpg",
       "id": 1
     },
     {
-      "name": "phat2322",
       "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722392770/n8wgtpyhn39u8ngsvf1e.jpg",
-=======
       "name": "bóng đá",
       "id": 1
     },
     {
-      "name": "bóng rổ",
->>>>>>> 5e83919d179848a9be71bbe36004135dc63b5d8c
+      "name": "QMANHq12323232",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722394547/kkbidbaakej79urq2jl5.jpg",
       "id": 2
     }
   ]
