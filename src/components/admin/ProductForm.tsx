@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from 'react';
+=======
+import React, { useEffect } from 'react';
+>>>>>>> 5e83919d179848a9be71bbe36004135dc63b5d8c
 import { useForm, Controller } from 'react-hook-form';
 import { Box, TextField, Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, FormControl, InputLabel, Select, MenuItem, Typography } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
@@ -19,14 +23,18 @@ const ProductForm: React.FC<ProductFormProps> = ({ open, onClose, onProductSaved
     defaultValues: product || { id: '', name: '', price: 0, image: '', category: '' },
   });
 
+<<<<<<< HEAD
   const [currentImageFile, setCurrentImageFile] = useState<File | null>(null);
 
+=======
+>>>>>>> 5e83919d179848a9be71bbe36004135dc63b5d8c
   useEffect(() => {
     if (product) {
       setValue('name', product.name);
       setValue('price', product.price);
       setValue('image', product.image);
       setValue('category', product.category);
+<<<<<<< HEAD
     } else {
       reset({ id: '', name: '', price: 0, image: '', category: '' });
     }
@@ -63,6 +71,16 @@ const ProductForm: React.FC<ProductFormProps> = ({ open, onClose, onProductSaved
         ? await axios.put(`http://localhost:3000/products/${product.id}`, updatedProduct)
         : await axios.post('http://localhost:3000/products', updatedProduct);
 
+=======
+    }
+  }, [product, setValue]);
+
+  const onSubmit = async (data: Iproduct) => {
+    try {
+      const response = product
+        ? await axios.put(`http://localhost:3000/products/${product.id}`, data)
+        : await axios.post('http://localhost:3000/products', data);
+>>>>>>> 5e83919d179848a9be71bbe36004135dc63b5d8c
       onProductSaved(response.data);
       reset();
       onClose();
@@ -127,6 +145,7 @@ const ProductForm: React.FC<ProductFormProps> = ({ open, onClose, onProductSaved
               />
             )}
           />
+<<<<<<< HEAD
           <FormControl fullWidth margin="normal" error={!!errors.image}>
             <input
               id="image-input"
@@ -139,6 +158,23 @@ const ProductForm: React.FC<ProductFormProps> = ({ open, onClose, onProductSaved
             />
             {errors.image && <Typography color="error">{errors.image.message}</Typography>}
           </FormControl>
+=======
+          <Controller
+            name="image"
+            control={control}
+            rules={{ required: 'Ảnh sản phẩm là bắt buộc' }}
+            render={({ field }) => (
+              <TextField
+                {...field}
+                label="Ảnh sản phẩm"
+                fullWidth
+                margin="normal"
+                error={!!errors.image}
+                helperText={errors.image?.message}
+              />
+            )}
+          />
+>>>>>>> 5e83919d179848a9be71bbe36004135dc63b5d8c
           <Controller
             name="category"
             control={control}
