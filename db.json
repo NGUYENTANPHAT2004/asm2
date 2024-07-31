@@ -2,20 +2,17 @@
   "products": [
     {
       "id": 1,
-      "name": "bóng đá23323",
-      "price": "2000",
-      "image": "https://khoinguonsangtao.vn/wp-content/uploads/2022/10/hinh-anh-bong-da.jpg",
+      "name": "phat nguyễn",
+      "price": "56565",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722401970/e53suca14w0d5oj0m24d.webp",
       "category": 1
     }
   ],
   "categories": [
     {
-      "name": "bóng đá",
+      "name": "iphone",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722401951/jxgn2xvkotht5vneezku.webp",
       "id": 1
-    },
-    {
-      "name": "bóng rổ",
-      "id": 2
     }
   ]
 }

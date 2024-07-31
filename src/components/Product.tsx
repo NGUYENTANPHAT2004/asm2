@@ -3,13 +3,14 @@ import Filter_Product from "./Filter_Product";
 import { Link } from "react-router-dom";
 import { useProductContext } from "../context/product_context";
 import { Iproduct } from "../interface/product";
+import { useSearchContext } from "../context/search_context";
 
 type Props = {};
 
 function Product({}: Props) {
-    const { products, categories } = useProductContext();
+    const { categories } = useProductContext();
     const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-
+    const { filteredProducts } = useSearchContext();
     const handleCategoryChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const categoryId = event.target.value;
         setSelectedCategories(prev => 
@@ -21,12 +22,10 @@ function Product({}: Props) {
 
     const selectedCategoryIds = selectedCategories.map(id => parseInt(id, 10));
 
-    const filteredProducts = useMemo(() => {
-        if (selectedCategoryIds.length === 0) return products;
-        return products.filter(product => selectedCategoryIds.includes(product.category));
-    }, [products, selectedCategoryIds]);
-        console.log("Selected Categories:", selectedCategories);
-        console.log(products)
+    const filterProducts = useMemo(() => {
+        if (selectedCategoryIds.length === 0) return filteredProducts;
+        return filteredProducts.filter(product => selectedCategoryIds.includes(product.category));
+    }, [filteredProducts, selectedCategoryIds]);
     return (
         <>
             <div className="container">
@@ -99,12 +98,12 @@ function Product({}: Props) {
                 <div className="flex justify-between  ">
                     {/* Product Item */}
                     <div className="grid grid-cols-3 gap-[22px] pt-[80px]">
-                        {filteredProducts.map((product: Iproduct) => (
+                        {filterProducts.map((product: Iproduct) => (
                         <div className="relative product_item py-3 px-4 max-w-[300px] max-h-[300px] border-2 border-solid border-[#eee] ">
                             <Link to={"/product/detail"}>
-                                <img
+                                <img  
                                     src={product.image}
-                                    className="mx-auto"
+                                    className="mx-auto max-w-[200px] max-h-[200px]"
                                     alt=""
                                 />
                             </Link>

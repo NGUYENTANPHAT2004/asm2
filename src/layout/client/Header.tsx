@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { useSearchContext } from "../../context/search_context";
 
 type Props = {};
 
 const Header = (props: Props) => {
+    const {setSearchText, filteredProducts} = useSearchContext();
+
+    const handleSearch = (data: string) => {
+        setSearchText(data);
+    };
+    console.log(filteredProducts)
     return (
         <>
             <header id="" className="header_bg h-[150px]">
@@ -16,6 +23,7 @@ const Header = (props: Props) => {
                                 className="bg-transparent outline-none border-none w-full text-[16px]"
                                 type="text"
                                 placeholder="Suchen Sie nach Produkten, Marken und mehr"
+                                onChange={(e) => handleSearch(e.target.value)}
                             />
                             <img
                                 className="h-5 w-5 cursor-pointer ml-3"

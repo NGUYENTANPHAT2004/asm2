@@ -2,11 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useProductContext } from "../context/product_context";
 import { Iproduct } from "../interface/product";
+import { useSearchContext } from "../context/search_context";
 
 
 const ProductItem = () => {
-    const { products, categories } = useProductContext();
-    const limitedProducts = products.slice(0, 5); 
+    const { categories } = useProductContext();
+    const { filteredProducts } = useSearchContext();
+    const limitedProducts = filteredProducts.slice(0, 5);
     const getCategoryName = (categoryId: string) => {
         const category = categories.find((cat) => cat.id === categoryId);
         return category ? category.name : 'không có';
