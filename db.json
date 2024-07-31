@@ -1,0 +1,37 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "bóng đá23323",
+      "price": "2000",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722392570/mpkcwm7wfxx1f9hnnnep.jpg",
+      "category": 1
+    },
+    {
+      "id": 2,
+      "name": "phat",
+      "price": "323232",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722392758/ksavx2d2jgm60emo1pmm.jpg",
+      "category": 1
+    },
+    {
+      "id": 3,
+      "name": "phat",
+      "price": "3323",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722392796/kjwiddb2kjk2ppuvyrl7.jpg",
+      "category": 2
+    }
+  ],
+  "categories": [
+    {
+      "name": "dsdsd",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722392748/sef8sk83litlydotoyqy.jpg",
+      "id": 1
+    },
+    {
+      "name": "phat2322",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722392770/n8wgtpyhn39u8ngsvf1e.jpg",
+      "id": 2
+    }
+  ]
+}
