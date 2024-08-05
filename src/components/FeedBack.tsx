@@ -8,17 +8,16 @@ const FeedBack = (props: Props) => {
             <div className="container pt-[60px] pb-[100px]">
                 <div className="feedBack_title ml-[140px]">
                     <h2 className="title_1 text-[#505F4E] font-bold text-[40px] tracking-[1.05px] capitalize">
-                        Etwas abonnieren
+                    Đăng ký nhận bản tin 
                     </h2>
                     <br />
                     <h2 className="title_2 text-[#505F4E] ml-[100px] font-bold text-[40px] tracking-[1.05px] capitalize">
-                        Unser Newsletter
+                    của chúng tôi
                     </h2>
                 </div>
                 <div className="feedback_content flex mt-[50px] ml-[200px]">
                     <p className="max-w-[238px] text-[#555] font-medium leading-[22px]">
-                        Get weekly update about our product on your email, no
-                        spam guaranteed we promise ✌️
+                    Nhận cập nhật hàng tuần về sản phẩm của chúng tôi qua email của bạn, không có thư rác, chúng tôi cam kết ✌️
                     </p>
                     <form
                         autoComplete="off"
@@ -35,7 +34,7 @@ const FeedBack = (props: Props) => {
                             placeholder="youremail123@gmail.com"
                         />
                         <button className="hover:bg-[#4E7C32] absolute right-0 bottom-[-30px] p-0 rounded-none border-none w-[160px] h-[52px] bg-[#656C66] text-white font-semibold tracking-[2px] ">
-                            ABONNIEREN
+                        ĐĂNG KÝ
                         </button>
                     </form>
                 </div>

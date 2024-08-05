@@ -14,7 +14,7 @@ const About = (props: Props) => {
                             alt=""
                         />
                         <h3 className="absolute top-[20px] left-0 w-full py-2 bg-gradient-to-r from-[rgba(255,255,255,0.8)] to-[rgba(255,255,255,0.1)] text-[#665345] font-semibold text-[14px] px-4 my-4">
-                            Lorem, ipsum dolor.
+                            Xẻng
                         </h3>
                     </div>
                     <div className="about_item bg-white w-[278px] relative">
@@ -25,7 +25,7 @@ const About = (props: Props) => {
                         />
 
                         <h3 className="absolute top-[20px] left-0 w-full py-2 bg-gradient-to-r from-[rgba(255,255,255,0.8)] to-[rgba(255,255,255,0.1)] text-[#665345] font-semibold text-[14px] px-4 my-4">
-                            Lorem, ipsum dolor.
+                           Bay 
                         </h3>
                     </div>
                     <div className="about_item bg-white w-[278px] relative">
@@ -36,7 +36,7 @@ const About = (props: Props) => {
                         />
 
                         <h3 className="absolute top-[20px] left-0 w-full py-2 bg-gradient-to-r from-[rgba(255,255,255,0.8)] to-[rgba(255,255,255,0.1)] text-[#665345] font-semibold text-[14px] px-4 my-4">
-                            Lorem, ipsum dolor.
+                            Đá
                         </h3>
                     </div>
                     <div className="about_item bg-white w-[278px] relative">
@@ -47,7 +47,7 @@ const About = (props: Props) => {
                         />
 
                         <h3 className="absolute top-[20px] left-0 w-full py-2 bg-gradient-to-r from-[rgba(255,255,255,0.8)] to-[rgba(255,255,255,0.1)] text-[#665345] font-semibold text-[14px] px-4 my-4">
-                            Lorem, ipsum dolor.
+                            Xô chậu
                         </h3>
                     </div>
                     <div className="about_item bg-white w-[278px] relative">
@@ -58,7 +58,7 @@ const About = (props: Props) => {
                         />
 
                         <h3 className="absolute top-[20px] left-0 w-full py-2 bg-gradient-to-r from-[rgba(255,255,255,0.8)] to-[rgba(255,255,255,0.1)] text-[#665345] font-semibold text-[14px] px-4 my-4">
-                            Lorem, ipsum dolor.
+                            Vòi tưới
                         </h3>
                     </div>
                 </div>

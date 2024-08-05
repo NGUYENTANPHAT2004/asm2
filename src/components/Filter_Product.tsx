@@ -12,7 +12,7 @@ const Filter_Product: React.FC<FilterProductProps> = ({  categories, onCategoryC
         <>
             <div>
                 <h3 className="text-[#505F4E] text-[30px] leading-[20px] font-bold mb-[30px]">
-                    Kategorien
+                    Danh mục
                 </h3>
 
                 {/* Form group */}
@@ -45,14 +45,14 @@ const Filter_Product: React.FC<FilterProductProps> = ({  categories, onCategoryC
                     alt=""
                 />
                 <h3 className="text-[18px] text-white font-bold leading-[28px] absolute top-[32px] left-[25px]">
-                    Grow your own favourite plant
+                    Sản phẩm theo giá tiền
                 </h3>
                 <div className="absolute bottom-[16px] left-[25px]">
                     <a
                         href="#!"
                         className="flex gap-2 items-center text-[15px] font-semibold leading-[22px] text-white"
                     >
-                        Shop Now
+                        Mua ngay
                         <img
                             src="/assets/svg/arrow_cricel_rigt.svg"
                             alt=""
@@ -64,7 +64,7 @@ const Filter_Product: React.FC<FilterProductProps> = ({  categories, onCategoryC
             <div className="mt-[40px]">
                 <div>
                     <p className="text-[16px] font-semibold ml-2">
-                        Filter By Price
+                        lọc theo giá
                     </p>
                     <img
                         src="/assets/svg/filter.svg"
@@ -73,16 +73,16 @@ const Filter_Product: React.FC<FilterProductProps> = ({  categories, onCategoryC
                     />
                     <div className="flex justify-between max-w-[230px] ml-2">
                         <span className="text-[14px] text-[#9e9da85]">
-                            From $0 to $8000
+                            từ $0 đến $8000
                         </span>
                         <span className="text-[14px] text-[#9e9da85]">
-                            Filter
+                            lọc
                         </span>
                     </div>
                 </div>
                 <div className="mt-5">
                     <p className="text-[16px] font-semibold ml-2">
-                        Filter By Size
+                        lọc theo kích thước
                     </p>
                     <img
                         src="/assets/svg/filter.svg"
@@ -91,10 +91,10 @@ const Filter_Product: React.FC<FilterProductProps> = ({  categories, onCategoryC
                     />
                     <div className="flex justify-between max-w-[230px] ml-2">
                         <span className="text-[14px] text-[#9e9da85]">
-                            2 mm by 50
+                            2 mm đến 50 mm
                         </span>
                         <span className="text-[14px] text-[#9e9da85]">
-                            Filter
+                            lọc
                         </span>
                     </div>
                 </div>

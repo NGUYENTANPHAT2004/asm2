@@ -1,18 +1,174 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "phat nguyễn",
-      "price": "56565",
-      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722401970/e53suca14w0d5oj0m24d.webp",
-      "category": 1
+      "id": 6,
+      "name": "manh3232232",
+      "price": "23232",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722850505/bewiolaqhuqlapmzfrlg.webp",
+      "category": 4,
+      "desc": "kobbbdsdssssssssssssssssssssssssssssssssss"
+    },
+    {
+      "id": 7,
+      "name": "ip11",
+      "price": "333333333333222222222",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722857493/jk0aahxh1kw8dwzew7gn.webp",
+      "category": 1,
+      "desc": "qua dep"
+    },
+    {
+      "id": 8,
+      "name": "ip 115",
+      "price": "3222",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722857530/mqqonwdu0uqlfeqhctwl.webp",
+      "category": 3,
+      "desc": "sp dep  nhat tk 21"
+    },
+    {
+      "id": 9,
+      "name": "QMANHq12323232",
+      "price": "322222222",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722858263/iw3s3cnnjehuwetcpaw0.webp",
+      "category": 3,
+      "desc": "dsdsdsddss"
     }
   ],
   "categories": [
     {
-      "name": "iphone",
-      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722401951/jxgn2xvkotht5vneezku.webp",
+      "name": "dsdsd",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722392748/sef8sk83litlydotoyqy.jpg",
       "id": 1
+    },
+    {
+      "name": "QMANHq12323232",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722394547/kkbidbaakej79urq2jl5.jpg",
+      "id": 2
+    },
+    {
+      "name": "phat nguyễn",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722427757/rso3gvyxrhkqz32ywhln.jpg",
+      "id": 3
+    },
+    {
+      "name": "Men's • Originals",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722427863/mnwig5blogb2csfehquy.jpg",
+      "id": 4
+    },
+    {
+      "name": "QMANHq123",
+      "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722851562/eh2ltkgnmpvzkcrhhzlh.jpg",
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "email": "tttp17045@gmail.com",
+      "password": "$2a$10$IrlEtzTyoywPrLBlXlhYu.jK2Bnijyu1CQv2c.TEf4Hb4TNgwv/sW",
+      "name": "sdsdsdsds",
+      "phone": "0813783419",
+      "id": 1
+    },
+    {
+      "email": "tttp17045@gmail.com32323232",
+      "password": "$2a$10$rjnXckVGqahj/8ec5tIJE.AuB9x0o231EmvyaejrNlrtrlTl4vYsq",
+      "name": "dsdsdsdsvvvvvvvvvvvv",
+      "phone": "0813783419",
+      "id": 2
+    },
+    {
+      "email": "tttp17045@gmail.com32323232dsdsd",
+      "password": "$2a$10$y4zTgWgSlHi36Ohy1.XkdeurAAX414jd1rdsk6IzW9Sed9akokcEK",
+      "name": "dsdsdsdsds",
+      "phone": "0813783413",
+      "id": 3
+    },
+    {
+      "email": "tttp17045@fpt.edu.vn",
+      "password": "$2a$10$dS4eqMj6ghbPxeV8SmjWxO6B2QAwT9NH/jxYaWfRda1/j6VU3CrxO",
+      "name": "dsdsdsdsd",
+      "phone": "0813783419",
+      "id": 4
+    }
+  ],
+  "Orders": [
+    {
+      "address": "đường xuân phương",
+      "birthDate": "2024-09-08",
+      "shippingMethod": "express",
+      "name": "dsdsdsdsvvvvvvvvvvvv",
+      "phone": "0813783419",
+      "email": "tttp17045@gmail.com32323232",
+      "userid": 2,
+      "items": [
+        {
+          "id": 1,
+          "name": "bóng đá23323",
+          "price": "2000",
+          "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722392570/mpkcwm7wfxx1f9hnnnep.jpg",
+          "category": 1,
+          "quantity": 30
+        },
+        {
+          "id": 2,
+          "name": "phat",
+          "price": "323232",
+          "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722392758/ksavx2d2jgm60emo1pmm.jpg",
+          "category": 1,
+          "quantity": 10
+        }
+      ],
+      "totalprice": 3292350,
+      "id": 1
+    },
+    {
+      "name": "manh",
+      "phone": "0813783419",
+      "email": "tttp1704@gmail.com",
+      "address": "đường xuân phương",
+      "birthDate": "2025-01-18",
+      "shippingMethod": "overnight",
+      "items": [
+        {
+          "id": 2,
+          "name": "phat",
+          "price": "323232",
+          "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722392758/ksavx2d2jgm60emo1pmm.jpg",
+          "category": 1,
+          "quantity": 9
+        }
+      ],
+      "totalprice": 2909128,
+      "id": 2
+    },
+    {
+      "name": "manh",
+      "phone": "0813783419",
+      "email": "admin1@gmail.com",
+      "address": "đường xuân phương",
+      "birthDate": "2024-08-16",
+      "shippingMethod": "standard",
+      "items": [
+        {
+          "id": 6,
+          "name": "manh3232232",
+          "price": "23232",
+          "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722850505/bewiolaqhuqlapmzfrlg.webp",
+          "category": 4,
+          "desc": "kobbbdsdssssssssssssssssssssssssssssssssss",
+          "quantity": 16
+        },
+        {
+          "id": 8,
+          "name": "ip 115",
+          "price": "3222",
+          "image": "https://res.cloudinary.com/dcjutahks/image/upload/v1722857530/mqqonwdu0uqlfeqhctwl.webp",
+          "category": 3,
+          "desc": "sp dep  nhat tk 21",
+          "quantity": 5
+        }
+      ],
+      "totalprice": 387842,
+      "id": 3
     }
   ]
 }

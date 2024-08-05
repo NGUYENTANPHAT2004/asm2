@@ -26,7 +26,6 @@ export const SearchProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         </SearchContext.Provider>
     );
 };
-
 export const useSearchContext = () => {
     const context = useContext(SearchContext);
     if (context === undefined) {

@@ -16,9 +16,7 @@ const Footer = (props: Props) => {
                 <div className="flex relative z-20 container gap-[30px] justify-between items-center pt-[30px] pb-[70px]">
                     <div>
                         <p className="text-[#F9F3EE] text-[14px] capitalize w-[350px] mb-[30px]">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua
+                        Chúng tôi cung cấp những sản phẩm chất lượng cao và dịch vụ tận tâm, cam kết mang lại sự hài lòng tối đa cho khách hàng
                         </p>
                         <div className="flex items-center gap-6">
                             <img
@@ -50,47 +48,49 @@ const Footer = (props: Props) => {
                     </div>
                     <div>
                         <h3 className="mb-5 text-[#F9F3EE] font-medium text-[16px]">
-                            Um
+                            Về
                         </h3>
                         <ul>
                             <li className="text-[#F9F3EE] text-[14px] mb-4 hover:underline leading-5 capitalize">
-                                <Link to={"#!"}>Kontaktiere uns</Link>
+                                <Link to={"#!"}> Liên hệ với chúng tôi</Link>
                             </li>
                             <li className="text-[#F9F3EE] text-[14px] mb-4 hover:underline leading-5 capitalize">
-                                <Link to={"#!"}>Über uns</Link>
+                                <Link to={"#!"}>Về chúng tôi
+                                </Link>
                             </li>
                             <li className="text-[#F9F3EE] text-[14px] mb-4 hover:underline leading-5 capitalize">
-                                <Link to={"#!"}>Karriere</Link>
+                                <Link to={"#!"}>Nghề nghiệp</Link>
                             </li>
                             <li className="text-[#F9F3EE] text-[14px] hover:underline leading-5 capitalize">
                                 {" "}
                                 <Link to={"#!"}>
-                                    Unternehmensinformationen{" "}
+                                    Thông tin công ty{" "}
                                 </Link>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="mb-5 text-[#F9F3EE] font-medium text-[16px]">
-                            Hilfe
+                            Trợ giúp
                         </h3>
                         <ul>
                             <li className="text-[#F9F3EE] text-[14px] mb-4 hover:underline leading-5 capitalize">
-                                <Link to={"#!"}>Unsere Produzenten</Link>
+                                <Link to={"#!"}>Các nhà sản xuất của chúng tôi</Link>
                             </li>
                             <li className="text-[#F9F3EE] text-[14px] mb-4 hover:underline leading-5 capitalize">
-                                <Link to={"#!"}>Versand</Link>
+                                <Link to={"#!"}>Vận chuyển</Link>
                             </li>
                             <li className="text-[#F9F3EE] text-[14px] mb-4 hover:underline leading-5 capitalize">
-                                <Link to={"#!"}>Stornierung & Rückgabe</Link>
+                                <Link to={"#!"}>Hủy bỏ & Trả hàng
+                                </Link>
                             </li>
                             <li className="text-[#F9F3EE] text-[14px] mb-4 hover:underline leading-5 capitalize">
-                                <Link to={"#!"}>Verstoß melden</Link>
+                                <Link to={"#!"}>Báo cáo vi phạm</Link>
                             </li>
                             <li className="text-[#F9F3EE] text-[14px] hover:underline leading-5 capitalize">
                                 {" "}
                                 <Link to={"#!"}>
-                                    Unternehmensinformationen{" "}
+                                    Chính sách{" "}
                                 </Link>
                             </li>
                         </ul>
@@ -101,20 +101,26 @@ const Footer = (props: Props) => {
                         </h3>
                         <ul>
                             <li className="text-[#F9F3EE] text-[14px] mb-4 hover:underline leading-5 capitalize">
-                                <Link to={"#!"}>Rücknahmegarantie</Link>
+                                <Link to={"#!"}>Chính sách hoàn trả</Link>
                             </li>
                             <li className="text-[#F9F3EE] text-[14px] mb-4 hover:underline leading-5 capitalize">
-                                <Link to={"#!"}>Nutzungsbedingungen</Link>
+                                <Link to={"#!"}>Điều Khoản</Link>
                             </li>
                             <li className="text-[#F9F3EE] text-[14px] mb-4 hover:underline leading-5 capitalize">
-                                <Link to={"#!"}>Sicherheit</Link>
+                                <Link to={"#!"}>An ninh</Link>
                             </li>
                             <li className="text-[#F9F3EE] text-[14px] mb-4 hover:underline leading-5 capitalize">
-                                <Link to={"#!"}>Privatsphäre </Link>
+                                <Link to={"#!"}>Quyền Riêng tư </Link>
                             </li>
                             <li className="text-[#F9F3EE] text-[14px] hover:underline leading-5 capitalize">
                                 {" "}
-                                <Link to={"#!"}>Seitenverzeichnis </Link>
+                                <Link to={"#!"}>Mục lục trang
+
+
+
+
+
+                                </Link>
                             </li>
                         </ul>
                     </div>

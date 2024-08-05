@@ -1,5 +1,6 @@
 import React from "react";
 import { useProductContext } from "../context/product_context";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -9,28 +10,32 @@ function Categories({}: Props) {
         <>
             <div className="container mt-20">
                 <h2 className="text-[#505F4E] font-bold text-[30px] tracking-[1.05px] capitalize">
-                    Kategorien
+                    Danh mục
                 </h2>
             </div>
             <div className="separate h-[2px] bg-[#0000001a]"></div>
             <div className="container">
                 <div className="cate grid grid-cols-4 gap-x-[20px] gap-y-[12px]">
                     {categories.map((cate) => (
-                        <div key={cate.id} className="item opacity-65 hover:opacity-100 cursor-pointer relative rounded ">
-                            <img
-                                src={cate.image}
-                                alt={cate.name}
-                                className="object-cover w-[300px] h-[374px] "
-                            />
-                            <div className="body absolute right-[15px] top-[20px]">
-                                <h3 className="text-white text-[18px] font-semibold leading-[20px]">
-                                    {cate.name}
-                                </h3>
-                                <span className="text-white font-semibold text-[14px] leading-[16px] tracking-[0.3px]">
-                                    {products.filter(product => product.category === cate.id).length} items
-                                </span>
-                            </div>
+                        <Link
+                        key={cate.id}
+                        to={`/product/category/${cate.id}`}
+                        className="item opacity-65 hover:opacity-100 cursor-pointer relative rounded"
+                    >
+                        <img
+                            src={cate.image}
+                            alt={cate.name}
+                            className="object-cover w-[300px] h-[374px]"
+                        />
+                        <div className="body absolute right-[15px] top-[20px]">
+                            <h3 className="text-white text-[18px] font-semibold leading-[20px]">
+                                {cate.name}
+                            </h3>
+                            <span className="text-white font-semibold text-[14px] leading-[16px] tracking-[0.3px]">
+                                {products.filter(product => product.category === cate.id).length} items
+                            </span>
                         </div>
+                    </Link>
                     ))}
                 </div>
             </div>

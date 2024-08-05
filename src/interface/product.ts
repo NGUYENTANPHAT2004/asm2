@@ -4,4 +4,6 @@ export interface Iproduct {
     price : number;
     image : string;
     category : string;
+    desc : string;
 }
+export type cart_pro = Pick<Iproduct, 'id'| 'name'|'image'|'price'>

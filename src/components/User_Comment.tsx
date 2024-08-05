@@ -19,12 +19,12 @@ const User_Comment = () => {
                             </div>
                         </div>
                         <p className="w-[482px] text-[#665345] text-[14px] mt-[14px]">
-                            I've been using this cleanser for about five or six
-                            months now and my acne is almost completely gone. I
-                            really struggled for years with my skin and tried
-                            everything possible but this is the only thing that
-                            managed to clear up my skin. 100% recommend and will
-                            continue to use is for sure.
+                            Tôi đã sử dụng sữa rửa mặt này trong khoảng năm hoặc sáu
+                            tháng nay và mụn của tôi gần như đã biến mất hoàn toàn. Tôi
+                            đã thực sự vật lộn trong nhiều năm với làn da của mình và đã thử
+                            mọi cách có thể nhưng đây là thứ duy nhất
+                            có thể làm sạch da của tôi. 100% khuyến nghị và chắc chắn sẽ
+                            tiếp tục sử dụng.
                         </p>
                     </div>
                     <div className="flex gap-[100px] mt-[30px]">
@@ -57,13 +57,7 @@ const User_Comment = () => {
                                 </div>
                             </div>
                             <p className="w-[482px] text-[#665345] text-[14px] mt-[14px]">
-                                I've been using this cleanser for about five or
-                                six months now and my acne is almost completely
-                                gone. I really struggled for years with my skin
-                                and tried everything possible but this is the
-                                only thing that managed to clear up my skin.
-                                100% recommend and will continue to use is for
-                                sure.
+                                Tôi đã sử dụng sữa rửa mặt này trong khoảng năm hoặc sáu tháng nay và mụn của tôi gần như đã biến mất hoàn toàn. Tôi thực sự đã vật lộn với làn da của mình trong nhiều năm và đã thử mọi cách có thể nhưng đây là thứ duy nhất có thể làm sạch da của tôi. Tôi khuyên dùng 100% và chắc chắn sẽ tiếp tục sử dụng..
                             </p>
                         </div>
                         <div>
@@ -95,20 +89,19 @@ const User_Comment = () => {
                                 </div>
                             </div>
                             <p className="w-[482px] text-[#665345] text-[14px] mt-[14px]">
-                                I've been using this cleanser for about five or
-                                six months now and my acne is almost completely
-                                gone. I really struggled for years with my skin
-                                and tried everything possible but this is the
-                                only thing that managed to clear up my skin.
-                                100% recommend and will continue to use is for
-                                sure.
+                                Tôi đã sử dụng sữa rửa mặt này trong khoảng năm hoặc sáu
+                                tháng nay và mụn của tôi gần như đã biến mất hoàn toàn. Tôi
+                                đã thực sự vật lộn trong nhiều năm với làn da của mình và đã thử
+                                mọi cách có thể nhưng đây là thứ duy nhất
+                                có thể làm sạch da của tôi. 100% khuyến nghị và chắc chắn sẽ
+                                tiếp tục sử dụng.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div className="text-center mt-[56px] mr-13">
                     <button className="text-white text-[12px] px-6 bg-[#4E7C32]">
-                        See All
+                        Xem tất cả
                     </button>
                 </div>
             </div>

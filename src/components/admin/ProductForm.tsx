@@ -16,10 +16,11 @@ interface ProductFormProps {
 
 const ProductForm: React.FC<ProductFormProps> = ({ open, onClose, onProductSaved, product, categories }) => {
   const { control, handleSubmit, reset, setValue, formState: { errors } } = useForm<Iproduct>({
-    defaultValues: product || { id: '', name: '', price: 0, image: '', category: '' },
+    defaultValues: product || { id: '', name: '', price: 0, image: '', category: '', desc: '' },
   });
 
   const [currentImageFile, setCurrentImageFile] = useState<File | null>(null);
+  const [existingImage, setExistingImage] = useState<string | null>(product?.image || '');
 
   useEffect(() => {
     if (product) {
@@ -27,8 +28,10 @@ const ProductForm: React.FC<ProductFormProps> = ({ open, onClose, onProductSaved
       setValue('price', product.price);
       setValue('image', product.image);
       setValue('category', product.category);
+      setValue('desc', product.desc);
+      setExistingImage(product.image); // Track existing image URL
     } else {
-      reset({ id: '', name: '', price: 0, image: '', category: '' });
+      reset({ id: '', name: '', price: 0, image: '', category: '', desc: '' });
     }
   }, [product, setValue, reset]);
 
@@ -48,7 +51,7 @@ const ProductForm: React.FC<ProductFormProps> = ({ open, onClose, onProductSaved
 
   const onSubmit = async (data: Iproduct) => {
     try {
-      let imageUrl = data.image;
+      let imageUrl = existingImage;
 
       if (currentImageFile) {
         imageUrl = await uploadImageToCloudinary(currentImageFile);
@@ -102,6 +105,21 @@ const ProductForm: React.FC<ProductFormProps> = ({ open, onClose, onProductSaved
                 margin="normal"
                 error={!!errors.name}
                 helperText={errors.name?.message}
+              />
+            )}
+          />
+          <Controller
+            name="desc"
+            control={control}
+            rules={{ required: 'Mô tả là bắt buộc' }}
+            render={({ field }) => (
+              <TextField
+                {...field}
+                label="Nhập mô tả"
+                fullWidth
+                margin="normal"
+                error={!!errors.desc}
+                helperText={errors.desc?.message}
               />
             )}
           />

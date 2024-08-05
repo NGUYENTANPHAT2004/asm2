@@ -8,7 +8,7 @@ const Cate_ListProduct = (props: Props) => {
             <div className="header_listProduct py-8">
                 <div className="container">
                     <h1 className="text-[#505F4E] text-[30px] leading-[20px] font-semibold">
-                        Töpfe & Behälter
+                       Sản Phẩm
                     </h1>
                 </div>
             </div>
@@ -21,7 +21,7 @@ const Cate_ListProduct = (props: Props) => {
                             alt=""
                         />
                         <h3 className="hover:text-white text-[#665345] capitalize font-semibold text-[15px]">
-                            Eckige Töpfe
+                            Bánh quy
                         </h3>
                     </div>
                     <div className="flex items-center  px-[6px] py-2 bg-[#D2E8CD] rounded w-[193px] cursor-pointer">
@@ -31,7 +31,7 @@ const Cate_ListProduct = (props: Props) => {
                             alt=""
                         />
                         <h3 className="hover:text-white text-[#665345] capitalize font-semibold text-[15px]">
-                            Runde Töpfe
+                        Bánh quy
                         </h3>
                     </div>
                     <div className="flex items-center  px-[6px] py-2 bg-[#D2E8CD] rounded w-[193px] cursor-pointer">
@@ -41,7 +41,7 @@ const Cate_ListProduct = (props: Props) => {
                             alt=""
                         />
                         <h3 className="hover:text-white text-[#665345] capitalize font-semibold text-[15px]">
-                            Untersetzer
+                        Bánh quy
                         </h3>
                     </div>
                     <div className="flex items-center  px-[6px] py-2 bg-[#D2E8CD] rounded w-[193px] cursor-pointer">
@@ -51,7 +51,7 @@ const Cate_ListProduct = (props: Props) => {
                             alt=""
                         />
                         <h3 className="hover:text-white text-[#665345] capitalize font-semibold text-[15px]">
-                            Pflanzschalen
+                        Bánh quy
                         </h3>
                     </div>
                 </div>

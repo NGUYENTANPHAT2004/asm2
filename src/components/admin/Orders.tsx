@@ -8,13 +8,14 @@ import axios from 'axios';
 import { Iproduct } from '../../interface/product';
 import { Category } from '../../interface/category';
 import ProductForm from './ProductForm';
+import { useShoppingCart } from '../../context/Cartcontext';
 
 const Orders: React.FC = () => {
   const [products, setProducts] = useState<Iproduct[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
   const [selectedProduct, setSelectedProduct] = useState<Iproduct | null>(null);
   const [open, setOpen] = useState(false);
-
+  const {removeProductFromCart} = useShoppingCart()
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -40,6 +41,7 @@ const Orders: React.FC = () => {
     try {
       await axios.delete(`http://localhost:3000/products/${id}`);
       setProducts(products.filter((product:Iproduct) => product.id !== id));
+      removeProductFromCart(id);
     } catch (error) {
       console.error('Error deleting product:', error);
     }

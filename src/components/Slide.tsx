@@ -6,10 +6,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Slide = () => {
     const settings = {
-        // infinite: true,
-        speed: 500,
-        // slidesToShow: 1,
+        infinite: true, 
+        speed: 500, 
+        slidesToShow: 1, 
         slidesToScroll: 1,
+        autoplay: true, 
+        autoplaySpeed: 3000, 
     };
     return (
         <>
@@ -29,7 +31,7 @@ const Slide = () => {
                             <p className="mt-[22px] w-[520px] text-[#665345] text-[15px] leading-[20px] tracking-[1.5px]">
                                 Lorem Ipsum is simply dummy text of the printing
                                 and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since
+                                the industry's standard dummy text ever sinces
                                 the 1500s,
                             </p>
                             <div className="max-w-[216px] mt-7 ">

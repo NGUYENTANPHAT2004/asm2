@@ -8,6 +8,8 @@ interface ProductContextType {
     categories: Category[];
     setProducts: React.Dispatch<React.SetStateAction<Iproduct[]>>;
     setCategories: React.Dispatch<React.SetStateAction<Category[]>>;
+    getcategoryby_id : (id:string) => void;
+    pro_catid : Iproduct[];
 }
 
 const ProductContext = createContext<ProductContextType | undefined>(undefined);
@@ -16,6 +18,7 @@ const ProductContext = createContext<ProductContextType | undefined>(undefined);
 export const ProductProvider: React.FC = ({ children } :any) => {
     const [products, setProducts] = useState<Iproduct[]>([]);
     const [categories, setCategories] = useState<Category[]>([]);
+    const [pro_catid, setpro_catid] = useState<Iproduct[]>([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -32,9 +35,16 @@ export const ProductProvider: React.FC = ({ children } :any) => {
         };
         fetchData();
     }, []);
-
+    const getcategoryby_id=async(id:string)=>{
+        try {
+            const {data} = await axios.get(`http://localhost:3000/products?category=${id}`)
+            setpro_catid(data)
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    }
     return (
-        <ProductContext.Provider value={{ products, categories, setProducts, setCategories }}>
+        <ProductContext.Provider value={{ products, categories, setProducts, setCategories,getcategoryby_id,pro_catid }}>
             {children}
         </ProductContext.Provider>
     );
